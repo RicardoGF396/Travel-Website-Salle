@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+:root{
+    --bg-principal: #14505C;
+    --bg-dark: #00323C;
+    --white-color: white;
+    --bg-light: #d4dee0ed;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    color: var(--bg-dark);
+}
+
+/* BODY E IMAGEN */
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.ticket_container{
+    width: 300px;
+}
+
+.img_container{
+    width: 100%;
+}
+
+.img_principal{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* TITLE SECTION */
+
+.ticket_container{
+    padding: 1rem;
+}
+
+.destino_container, .origen_container{
+    margin-bottom: 2rem;
+}
+
+.destino_content{
+    display: flex;
+    align-items: center;
+}
+
+.icono{
+    margin-right: 1rem;
+}
+
+
+/* COSTOS SECTION */
+.costos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    
+    padding: 1rem;
+    padding-left: 2rem;
+    margin: 0 auto;
+}
+
+.col{
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(145, 144, 144, 0.185);
+    padding-bottom: 5px;
+}
+
+.texto_costos{
+    margin-bottom: 5px;
+}
+
+
+/* Cupon */
+.contenedor_cuponTXT{
+    position: relative;
+    background-color: #14505c36;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.cupon_icon{
+    position: absolute;
+    top: -25px;
+    left: -20px;
+    width: 60px;
+}
+
+.qr{
+    margin-top: 1rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(145, 144, 144, 0.185);
+    padding-bottom: 1rem;
+}
+
+/* TOTAL SECTION */
+
+.total{
+    margin-top: 2rem;
+}
+
+.texto_total{
+    display: flex;
+    align-items: center;
+}
+
+.pay_icon{
+    width: 40px;
+}
+
+.payment{
+    color: var(--bg-principal);
+}
+
+
+
+/* ========================= QUERYS ==================== */
+
+@media screen and (min-width:768px){
+    
+    /* BODY DE TICKET */
+    .ticket_container{
+        width: 600px;
+    }
+
+    .container{
+        height: 100vh;
+    }
+
+    /* TITULO SECTION */
+    .title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+        /* COSTOS SECTION */
+    .costos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+        
+        padding: 1rem;
+        padding-left: 2rem;
+        margin: 0 auto;
+    }
+
+    .con{
+        border-bottom: 0;
+        border-right: 1px solid rgba(145, 144, 144, 0.185);
+    }
+
+    .sin{
+        border-bottom: 0;
+    }
+
+    .mt-5{
+        margin-top: 5.4rem;
+    }
+
+    .row{
+        margin-bottom: 1.5rem;
+    }
+
+    /* ====== CUPON SECTION ====== */
+
+    .cupon{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(145, 144, 144, 0.185);
+        padding-bottom: 2rem;
+    }
+
+    .texto_cupon{
+        width: 350px;
+    }
+
+    .mt-2{
+        margin-top: 2rem;
+    }
+
+
+    /* TOTAL SECTION */
+    .total{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+
+@media screen and (min-width:1024px){
+    /* BODY DE TICKET */
+    .ticket_container{
+        width: 700px;
+        padding: 2rem;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: stretch;
+        align-items: stretch;
+    }
+
+    .img_container{
+        width: 50%;
+    }
+
+    .img_principal{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .pay_icon{
+        width: 50px;
+    }
+
+    .img_qr{
+        width: 80px;
+    }
+
+    .qr{
+        display: flex;
+        align-items: baseline;
+    }
+
+    .contenedor_cuponTXT{
+        width: 300px;
+    }
+
+    .download{
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+img{
+    height: 897px;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 40px;
+}
+
+
+#cab{
+    margin-top: 20px;
+    margin-left: 920px;
+    margin-right: 130px;
+    margin-bottom: 50px;
+    padding-top: 70px;
+}
+#cab img{
+    width: 30px;
+    height: auto;
+}
+#cab .row h5{
+    margin-left: 40px
+}
+
+#resumen{
+    margin-top: 20px;
+    margin-left: 940px;
+    margin-right: 250px;
+    visibility: visible;
+    text-align: center;
+    border-top: solid 2px grey;
+    border-bottom: solid 2px grey;
+    padding-left: 150px;
+}
+
+#resumen #r1,#r2{
+    border-right: solid 2px grey;
+    padding-bottom: 20px;
+}
+#resumen #row1{
+    margin-top: 10px;
+}
+#resumen #row2{
+    margin-bottom: 10px;
+}
+
+
+#cab1{
+    margin-top: 20px;
+    margin-left: 930px;
+    margin-right: 250px;
+    margin-bottom: 50px;
+    border-bottom: solid 2px grey;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+#cab1 img{
+    width: 40px;
+    height: auto;
+}
+#cab1 .row h6{
+    padding-left: 10px;
+    margin-left: 30px;
+    border: solid 2px cornflowerblue;
+    border-radius: 10px;
+}
+#cab1 .row #qr{
+    width: 110px;
+    height: auto;
+}
+#cab1 .row #download{
+    width: 40px;
+    height: auto;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 70px;
+}
+
+#cab2{
+    margin-top: 20px;
+    margin-left: 940px;
+    margin-right: 250px;
+    padding-left: 10px;
+}
+#cab2 img{
+    width: 50px;
+    height: auto;
+} 
+*/

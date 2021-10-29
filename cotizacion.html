@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS MINE -->
+    <link rel="stylesheet" href="css/estiloscotizacion.css">
+
+    <!-- js -->
+    <!-- NO QUITAR -->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="js/main.js"></script>
+
+    <title>Cotización</title>
+  </head>
+  <body>
+  
+    <div class="container">
+
+      <div class="main_content">
+        <!-- Contenedor de imagen -->
+      <div class="img_container">
+        <img class="img" src="imgCotizacion/cotizacion.jpg" alt="">
+      </div>
+
+      <!-- Contenedor form -->
+      <div class="form_container">
+        <div class="inner_form">
+
+          <h1>Cotización</h1>
+
+          <h4>Lugar de Origen</h4>
+          <p>León Gto.</p>
+
+          <h4>Destino Turístico</h4>
+
+          <div class="form_content derecha" id="estadosElec">
+            <form id="formulario">
+              <select name="estados" class="field-1" id="form_estados" >
+                <option value="0">Aguascalientes</option>
+                <option value="1">Baja California</option>
+                <option value="2">Baja California Sur</option>
+                <option value="3">Campeche</option>
+                <option value="4">Chiapas</option>
+                <option value="5">Chihuahua</option>
+                <option value="6">Coahuila de Zaragoza</option>
+                <option value="7">Colima</option>
+                <option value="8">Durango</option>
+                <option value="9">Guerrero</option>
+                <option value="10">Hidalgo</option>
+                <option value="11">Jalisco</option>
+                <option value="12">México</option>
+                <option value="13">Michoacán de Ocampo</option>
+                <option value="14">Morelos</option>
+                <option value="15">Nayarit</option>
+                <option value="16">Nuevo León</option>
+                <option value="17">Oaxaca</option>
+                <option value="18">Puebla</option>
+                <option value="19">Querétaro</option>
+                <option value="20">Quintana Roo</option>
+                <option value="21">San Luis Potosí</option>
+                <option value="22">Sinaloa</option>
+                <option value="23">Sonora</option>
+                <option value="24">Tabasco</option>
+                <option value="25">Tamaulipas</option>
+                <option value="26">Tlaxcala</option>
+                <option value="27">Veracruz </option>
+                <option value="28">Yucatán</option>
+                <option value="29">Zacatecas</option>
+                <option value="30">Guanajuato</option>
+              </select>
+              <br>
+              <h4 class="subti">Dias de estancia:</h4>
+              <select  class="field"name="diasEstancia " id="form_dias">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27 </option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+              <br>
+
+              <div class="flex_people">
+                
+                <div class="container_adultos">
+                  <h4 class="subti">Adultos:</h4>
+              <select class="field-2" name="numAdultos" id="form_olders">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+                </div>
+              
+              <div class="container_kids">
+                <h4 class="subti">Niños:</h4>
+              <select class="field-2" name="numNinos" id="form_Ninos">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              </div>
+              </div>
+
+              <br>
+              <br>
+              <br>
+              <input 
+                class="btn-cotizar btn"
+                type="submit"
+                value="Cotizar"
+                formaction="finCotizacion.html"
+                >
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+      </div>
+
+
+
+
+
+    </div>
+
+      
+
+
+
+
+  </body>
+</html>
+
+
+<!-- 
+
+  <div class="contenedor">
+        <div class="contenedor-ex">
+          <div class="izquierda">
+           
+          </div>
+          <div class="derecha" id="estadosElec">
+            <h1>Cotización</h1>
+            <br>
+            <br>
+            <label class="subti">Lugar de origen</label><br>
+            <label for="">Leon Gto.</label> <br> <br>
+            <label class="subti">Destino Turistico:</label>
+              <form id="formulario">
+              <select name="estados" class="field-1" id="form_estados" >
+                <option value="0">Aguascalientes</option>
+                <option value="1">Baja California</option>
+                <option value="2">Baja California Sur</option>
+                <option value="3">Campeche</option>
+                <option value="4">Chiapas</option>
+                <option value="5">Chihuahua</option>
+                <option value="6">Coahuila de Zaragoza</option>
+                <option value="7">Colima</option>
+                <option value="8">Durango</option>
+                <option value="9">Guerrero</option>
+                <option value="10">Hidalgo</option>
+                <option value="11">Jalisco</option>
+                <option value="12">México</option>
+                <option value="13">Michoacán de Ocampo</option>
+                <option value="14">Morelos</option>
+                <option value="15">Nayarit</option>
+                <option value="16">Nuevo León</option>
+                <option value="17">Oaxaca</option>
+                <option value="18">Puebla</option>
+                <option value="19">Querétaro</option>
+                <option value="20">Quintana Roo</option>
+                <option value="21">San Luis Potosí</option>
+                <option value="22">Sinaloa</option>
+                <option value="23">Sonora</option>
+                <option value="24">Tabasco</option>
+                <option value="25">Tamaulipas</option>
+                <option value="26">Tlaxcala</option>
+                <option value="27">Veracruz </option>
+                <option value="28">Yucatán</option>
+                <option value="29">Zacatecas</option>
+                <option value="30">Guanajuato</option>
+              </select>
+              <br>
+              <label class="subti">Dias de estancia:</label>
+              <select  class="field"name="diasEstancia " id="form_dias">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27 </option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+              <br>
+              <label class="subti">Adultos:</label>
+              <select class="field-2" name="numAdultos" id="form_olders">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <label class="subti">Niños:</label>
+              <select class="field-2" name="numNinos" id="form_Ninos">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <br>
+              <br>
+              <br>
+              <input 
+                class="btn-cotizar"
+                type="submit"
+                value="Cotizar"
+                formaction="finCotizacion.html"
+                >
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+ -->
